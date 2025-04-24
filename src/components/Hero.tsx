@@ -7,6 +7,7 @@ import { PlayIcon, PauseIcon } from '@heroicons/react/20/solid'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const navigation = [
   { name: "So Funktioniert's", href: '/#how-it-works' },
@@ -17,9 +18,11 @@ const navigation = [
 ]
 
 export default function Example() {
+  const router = useRouter()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
   const [scrollY, setScrollY] = useState(0)
+  const [audioLoaded, setAudioLoaded] = useState(false)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
@@ -31,30 +34,56 @@ export default function Example() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const toggleAudio = () => {
+  useEffect(() => {
+    // Initialize audio when component mounts
     if (audioRef.current) {
+      audioRef.current.load();
+      setAudioLoaded(true);
+    }
+  }, [])
+
+  const toggleAudio = async () => {
+    if (!audioRef.current || !audioLoaded) return;
+
+    try {
       if (isPlaying) {
-        audioRef.current.pause();
+        await audioRef.current.pause();
         setIsPlaying(false);
       } else {
-        // Make sure the audio is loaded and ready
-        audioRef.current.load();
-        
-        // Use the play() Promise to handle any errors
+        // For mobile, we need to load the audio again before playing
+        audioRef.current.currentTime = 0;
         const playPromise = audioRef.current.play();
         
         if (playPromise !== undefined) {
-          playPromise
-            .then(() => {
-              setIsPlaying(true);
-            })
-            .catch(error => {
-              console.error("Playback failed:", error);
-              // Keep playing state accurate if playback fails
-              setIsPlaying(false);
-            });
+          await playPromise;
+          setIsPlaying(true);
         }
       }
+    } catch (error) {
+      console.error("Audio playback error:", error);
+      setIsPlaying(false);
+    }
+  }
+
+  const handleNavClick = (href: string, e: React.MouseEvent) => {
+    e.preventDefault()
+    setMobileMenuOpen(false)
+
+    if (href.startsWith('/#')) {
+      // If we're already on the home page
+      if (window.location.pathname === '/') {
+        const elementId = href.split('#')[1]
+        const element = document.getElementById(elementId)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      } else {
+        // If we're on a different page, navigate to home first
+        router.push(href)
+      }
+    } else {
+      // For non-anchor links (like /kontakt)
+      router.push(href)
     }
   }
 
@@ -93,7 +122,12 @@ export default function Example() {
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="text-sm font-semibold text-gray-900 hover:text-[#1A371C] font-[Instrument_Sans]">
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={(e) => handleNavClick(item.href, e)}
+                  className="text-sm font-semibold text-gray-900 hover:text-[#1A371C] font-[Instrument_Sans]"
+                >
                   {item.name}
                 </a>
               ))}
@@ -134,6 +168,7 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
+                        onClick={(e) => handleNavClick(item.href, e)}
                         className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 font-[Instrument_Sans]"
                       >
                         {item.name}
@@ -236,7 +271,12 @@ export default function Example() {
               </button>
             </motion.div>
             
-            <audio ref={audioRef} className="hidden">
+            <audio 
+              ref={audioRef} 
+              className="hidden"
+              preload="auto"
+              playsInline
+            >
               <source src="/audio/Neukunde Termin .m4a" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
