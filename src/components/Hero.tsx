@@ -68,6 +68,12 @@ export default function Example() {
 
   const toggleAudio = async () => {
     if (!audioRef.current) return;
+    
+    // Don't attempt to play if audio isn't loaded yet
+    if (!audioLoaded) {
+      setAudioError('Audio not fully loaded yet. Please try again.');
+      return;
+    }
 
     try {
       const audio = audioRef.current;
