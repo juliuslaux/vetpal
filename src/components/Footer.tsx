@@ -17,7 +17,7 @@ const navigation = {
   legal: [
     { name: 'Impressum', href: '/impressum' },
     { name: 'Datenschutzerklärung', href: '/datenschutz' },
-    { name: 'Auftragsverarbeitungsvertrag', href: '/auftragsverarbeitung' },
+    { name: 'AVV', href: '/auftragsverarbeitung' },
   ],
   social: [
     {
@@ -111,7 +111,7 @@ export default function Footer() {
 
           {/* Right columns */}
           <div className="mt-8 md:mt-0 md:w-1/2">
-            <div className="grid grid-cols-3 gap-8 md:gap-x-12">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-x-12">
               <div>
                 <h3 className="text-sm font-semibold text-gray-600 font-[Instrument_Sans]">Kontakt</h3>
                 <ul className="mt-4 space-y-2">
@@ -129,7 +129,7 @@ export default function Footer() {
                   <li className="text-sm text-gray-600 font-[Instrument_Sans]">12403 Berlin</li>
                 </ul>
               </div>
-              <div>
+              <div className="hidden md:block">
                 <h3 className="text-sm font-semibold text-gray-600 font-[Instrument_Sans]">Navigation</h3>
                 <ul className="mt-4 space-y-2">
                   {navigation.main.map((item) => (

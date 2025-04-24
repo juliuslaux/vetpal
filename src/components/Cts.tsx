@@ -13,12 +13,12 @@ export default function Cts() {
                 Bereit für die Zukunft Ihrer Praxis?
               </h2>
               <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-[#000000] font-[Instrument_Sans]">
-              Jetzt kostenfrei Testzugang zu Emma erhalten. Wir richten Emma unverbindlich für Ihre Praxis ein und zeigen Ihnen, wie einfach und effizient Ihre Telefonanlage mit Emma sein kann.
+                Jetzt kostenfrei Testzugang zu Emma erhalten. Wir richten Emma unverbindlich für Ihre Praxis ein und zeigen Ihnen, wie einfach und effizient Ihre Telefonanlage mit Emma sein kann.
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
+              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-[#1A371C] px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#2A472C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A371C] font-[Instrument_Sans]"
+                  className="w-full sm:w-auto rounded-md bg-[#1A371C] px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#2A472C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A371C] font-[Instrument_Sans]"
                 >
                   Gespräch vereinbaren
                 </a>

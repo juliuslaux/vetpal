@@ -8,10 +8,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Vorteile', href: '#benefits' },
-  { name: "So Funktioniert's", href: '#how-it-works' },
-  { name: 'Anwendungsfälle', href: '#examples' },
-  { name: 'FAQs', href: '#faqs' },
+  { name: 'Vorteile', href: '/#benefits' },
+  { name: "So Funktioniert's", href: '/#how-it-works' },
+  { name: 'Anwendungsfälle', href: '/#examples' },
+  { name: 'FAQs', href: '/#faqs' },
   { name: 'Kontakt', href: '/kontakt' },
 ]
 
@@ -28,14 +28,20 @@ export default function Datenschutz() {
                 <span className="sr-only">Vetpal Logo</span>
                 <Image
                   alt="Vetpal Logo"
-                  src="/images/vetpal-logo-green.svg"
+                  src="/images/vetpal-icon-green.svg"
                   width={120}
                   height={32}
-                  className="h-8 w-auto"
+                  className="h-6 w-auto"
                 />
               </Link>
             </div>
-            <div className="flex lg:hidden">
+            <div className="flex items-center gap-x-4 lg:hidden">
+              <a
+                href="#"
+                className="rounded-lg bg-[#1A371C] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
+              >
+                Gespräch vereinbaren
+              </a>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(true)}
@@ -66,7 +72,7 @@ export default function Datenschutz() {
                   <span className="sr-only">Vetpal Logo</span>
                   <Image
                     alt="Vetpal Logo"
-                    src="/images/vetpal_logo.svg"
+                    src="/images/vetpal-logo-green.svg"
                     width={120}
                     height={32}
                     className="h-8 w-auto"

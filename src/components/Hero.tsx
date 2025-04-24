@@ -9,8 +9,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Vorteile', href: '#benefits' },
   { name: "So Funktioniert's", href: '#how-it-works' },
+  { name: 'Vorteile', href: '#benefits' },
   { name: 'Anwendungsfälle', href: '#examples' },
   { name: 'FAQs', href: '#faqs' },
   { name: 'Kontakt', href: '/kontakt' },
@@ -68,14 +68,20 @@ export default function Example() {
                 <span className="sr-only">Vetpal Logo</span>
                 <Image
                   alt="Vetpal Logo"
-                  src="/images/vetpal-logo-green.svg"
+                  src="/images/vetpal-icon-green.svg"
                   width={120}
                   height={32}
-                  className="h-8 w-auto"
+                  className="h-6 w-auto"
                 />
               </Link>
             </div>
-            <div className="flex lg:hidden">
+            <div className="flex items-center gap-x-4 lg:hidden">
+              <a
+                href="#"
+                className="rounded-lg bg-[#1A371C] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
+              >
+                Gespräch vereinbaren
+              </a>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(true)}
@@ -106,7 +112,7 @@ export default function Example() {
                   <span className="sr-only">Vetpal Logo</span>
                   <Image
                     alt="Vetpal Logo"
-                    src="/images/vetpal_logo.svg"
+                    src="/images/vetpal-logo-green.svg"
                     width={120}
                     height={32}
                     className="h-8 w-auto"
@@ -141,15 +147,15 @@ export default function Example() {
         </div>
       </header>
 
-      <div className="relative isolate pt-28">
+      <div className="relative isolate pt-10">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-32 lg:px-8 lg:py-40">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mx-auto max-w-2xl lg:max-w-2xl lg:mx-0 lg:flex-auto"
+            className="mx-auto max-w-2xl lg:max-w-2xl lg:mx-0 lg:flex-auto text-center lg:text-left"
           >
-            <h1 className="mt-10 text-5xl tracking-tight text-[#000000] sm:text-6xl font-semibold font-[DM_Sans] leading-[1.1]">
+            <h1 className="mt-0 sm:mt-10 text-3xl xs:text-4xl sm:text-5xl tracking-tight text-[#000000] font-semibold font-[DM_Sans] leading-[1.1]">
               <motion.div 
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -162,8 +168,9 @@ export default function Example() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
+                className="inline-block"
               >
-                <span className="mb-2 bg-[#e2edd0] rounded-lg px-2">KI-Telefonassistentin</span>
+                <span className="mb-2 bg-[#e2edd0] rounded-lg px-2 whitespace-nowrap">KI-Telefonassistentin</span>
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, x: -20 }}
@@ -177,7 +184,7 @@ export default function Example() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="mt-8 text-lg text-pretty text-[#5e6159] sm:text-xl/8 font-medium font-[Instrument_Sans]"
+              className="mt-6 sm:mt-8 text-base sm:text-lg text-pretty text-[#5e6159] sm:text-xl/8 font-medium font-[Instrument_Sans]"
             >
               Abgestimmt auf die Bedürfnisse von Tierarztpraxen, geht Emma  24/7 ans Telefon, beantwortet Fragen, nimmt Terminwünsche entgegen und leitet direkt an die richtigen Ansprechpartner weiter.
             </motion.p>
@@ -185,7 +192,7 @@ export default function Example() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1 }}
-              className="mt-10 flex items-center gap-x-6"
+              className="mt-10 flex items-center gap-x-6 justify-center lg:justify-start"
             >
               <a
                 href="#"
