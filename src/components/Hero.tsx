@@ -23,6 +23,7 @@ export default function Example() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [scrollY, setScrollY] = useState(0)
   const [audioLoaded, setAudioLoaded] = useState(false)
+  const [audioError, setAudioError] = useState<string | null>(null)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
@@ -37,33 +38,58 @@ export default function Example() {
   useEffect(() => {
     // Initialize audio when component mounts
     if (audioRef.current) {
-      audioRef.current.load();
-      setAudioLoaded(true);
+      const audio = audioRef.current;
+      
+      // Add event listeners for better error handling
+      audio.addEventListener('loadeddata', () => {
+        setAudioLoaded(true);
+        setAudioError(null);
+      });
+
+      audio.addEventListener('error', (e) => {
+        setAudioError('Error loading audio');
+        console.error('Audio error:', e);
+      });
+
+      // Load the audio
+      audio.load();
+
+      // Cleanup
+      return () => {
+        audio.removeEventListener('loadeddata', () => {
+          setAudioLoaded(true);
+        });
+        audio.removeEventListener('error', () => {
+          setAudioError('Error loading audio');
+        });
+      };
     }
-  }, [])
+  }, []);
 
   const toggleAudio = async () => {
-    if (!audioRef.current || !audioLoaded) return;
+    if (!audioRef.current) return;
 
     try {
+      const audio = audioRef.current;
+
       if (isPlaying) {
-        await audioRef.current.pause();
+        await audio.pause();
         setIsPlaying(false);
       } else {
-        // For mobile, we need to load the audio again before playing
-        audioRef.current.currentTime = 0;
-        const playPromise = audioRef.current.play();
+        // Reset audio position
+        audio.currentTime = 0;
         
-        if (playPromise !== undefined) {
-          await playPromise;
-          setIsPlaying(true);
-        }
+        // iOS requires user interaction to play audio
+        // This should be called directly from the click handler
+        await audio.play();
+        setIsPlaying(true);
       }
     } catch (error) {
       console.error("Audio playback error:", error);
+      setAudioError('Error playing audio');
       setIsPlaying(false);
     }
-  }
+  };
 
   const handleNavClick = (href: string, e: React.MouseEvent) => {
     e.preventDefault()
@@ -190,12 +216,12 @@ export default function Example() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mx-auto max-w-2xl lg:max-w-2xl lg:mx-0 lg:flex-auto text-center lg:text-left"
           >
-            <h1 className="mt-0 sm:mt-10 text-3xl xs:text-4xl sm:text-5xl tracking-tight text-[#000000] font-semibold font-[DM_Sans] leading-[1.1]">
+            <h1 className="mt-0 sm:mt-10 text-3xl xs:text-4xl sm:text-5xl tracking-tight text-[#000000] font-semibold font-[DM_Sans] leading-[1.2] sm:leading-[1.1]">
               <motion.div 
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="mb-2"
+                className="mb-1 sm:mb-2"
               >
                 Emma. Die
               </motion.div>
@@ -203,9 +229,9 @@ export default function Example() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="inline-block"
+                className="inline-block mb-1 sm:mb-2"
               >
-                <span className="mb-2 bg-[#e2edd0] rounded-lg px-2 whitespace-nowrap">KI-Telefonassistentin</span>
+                <span className="bg-[#e2edd0] rounded-lg px-2 whitespace-nowrap">KI-Telefonassistentin</span>
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, x: -20 }}
@@ -269,6 +295,11 @@ export default function Example() {
                   <PlayIcon className="h-8 w-8 text-[#1A371C]" />
                 )}
               </button>
+              {audioError && (
+                <div className="absolute bottom-0 left-0 right-0 bg-red-500 text-white text-sm py-1 px-2 text-center rounded-b-lg">
+                  {audioError}
+                </div>
+              )}
             </motion.div>
             
             <audio 
@@ -276,8 +307,10 @@ export default function Example() {
               className="hidden"
               preload="auto"
               playsInline
+              controls={false}
             >
-              <source src="/audio/Neukunde Termin .m4a" type="audio/mpeg" />
+              <source src="/audio/Neukunde Termin .m4a" type="audio/mp4" />
+              <source src="/audio/Neukunde Termin .m4a" type="audio/x-m4a" />
               Your browser does not support the audio element.
             </audio>
           </motion.div>
