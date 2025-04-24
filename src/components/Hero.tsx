@@ -9,10 +9,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const navigation = [
-  { name: "So Funktioniert's", href: '#how-it-works' },
-  { name: 'Vorteile', href: '#benefits' },
-  { name: 'Anwendungsfälle', href: '#examples' },
-  { name: 'FAQs', href: '#faqs' },
+  { name: "So Funktioniert's", href: '/#how-it-works' },
+  { name: 'Vorteile', href: '/#benefits' },
+  { name: 'Anwendungsfälle', href: '/#examples' },
+  { name: 'FAQs', href: '/#faqs' },
   { name: 'Kontakt', href: '/kontakt' },
 ]
 
