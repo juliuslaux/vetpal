@@ -18,7 +18,7 @@ export default function Cts() {
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-x-6">
                 <a
                   href="#"
-                  className="w-full sm:w-auto rounded-md bg-[#1A371C] px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#2A472C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A371C] font-[Instrument_Sans]"
+                  className="w-full sm:w-auto rounded-xl bg-[#1A371C] px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#2A472C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A371C] font-[Instrument_Sans]"
                 >
                   Gespräch vereinbaren
                 </a>

@@ -176,7 +176,7 @@ export default function Example() {
               ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" className="rounded-lg bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]">
+              <a href="#" className="rounded-xl bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]">
                 Gespräch vereinbaren
               </a>
             </div>
@@ -212,7 +212,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         onClick={(e) => handleNavClick(item.href, e)}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 font-[Instrument_Sans]"
+                        className="-mx-3 block rounded-xl px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 font-[Instrument_Sans]"
                       >
                         {item.name}
                       </a>
@@ -233,7 +233,7 @@ export default function Example() {
         </div>
       </header>
 
-      <div className="relative isolate pt-10">
+      <div className="relative isolate pt-5">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-32 lg:px-8 lg:py-40">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
