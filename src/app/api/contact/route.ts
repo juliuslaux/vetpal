@@ -19,7 +19,7 @@ export async function POST(request: Request) {
 
     // Send notification email
     await resend.emails.send({
-      from: 'VetPal Contact Form <noreply@vetpal.de>',
+      from: 'VetPal Contact Form <info@vetpal.de>',
       to: notificationEmail!,
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `

@@ -24,6 +24,8 @@ export default function Example() {
   const [scrollY, setScrollY] = useState(0)
   const [audioLoaded, setAudioLoaded] = useState(false)
   const [audioError, setAudioError] = useState<string | null>(null)
+  const [currentTime, setCurrentTime] = useState(0)
+  const [duration, setDuration] = useState(0)
   const audioRef = useRef<HTMLAudioElement>(null)
 
   useEffect(() => {
@@ -44,11 +46,16 @@ export default function Example() {
       audio.addEventListener('loadeddata', () => {
         setAudioLoaded(true);
         setAudioError(null);
+        setDuration(audio.duration);
       });
 
       audio.addEventListener('error', (e) => {
         setAudioError('Error loading audio');
         console.error('Audio error:', e);
+      });
+
+      audio.addEventListener('timeupdate', () => {
+        setCurrentTime(audio.currentTime);
       });
 
       // Load the audio
@@ -61,6 +68,9 @@ export default function Example() {
         });
         audio.removeEventListener('error', () => {
           setAudioError('Error loading audio');
+        });
+        audio.removeEventListener('timeupdate', () => {
+          setCurrentTime(audio.currentTime);
         });
       };
     }
@@ -119,6 +129,13 @@ export default function Example() {
     }
   }
 
+  // Format time as mm:ss
+  const formatTime = (time: number) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  };
+
   return (
     <div className="bg-[#FFFFFF]">
       <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
@@ -137,12 +154,6 @@ export default function Example() {
               </Link>
             </div>
             <div className="flex items-center gap-x-4 lg:hidden">
-              <a
-                href="#"
-                className="rounded-lg bg-[#1A371C] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
-              >
-                Gespräch vereinbaren
-              </a>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(true)}
@@ -207,6 +218,14 @@ export default function Example() {
                       </a>
                     ))}
                   </div>
+                  <div className="py-6">
+                    <a
+                      href="#"
+                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-[#1A371C] hover:bg-[#1A371C]/90 font-[Instrument_Sans] text-center"
+                    >
+                      Gespräch vereinbaren
+                    </a>
+                  </div>
                 </div>
               </div>
             </DialogPanel>
@@ -253,20 +272,40 @@ export default function Example() {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="mt-6 sm:mt-8 text-base sm:text-lg text-pretty text-[#5e6159] sm:text-xl/8 font-medium font-[Instrument_Sans]"
             >
-              Abgestimmt auf die Bedürfnisse von Tierarztpraxen, geht Emma  24/7 ans Telefon, beantwortet Fragen, nimmt Terminwünsche entgegen und leitet direkt an die richtigen Ansprechpartner weiter.
+              Emma nimmt Anrufe 24/7 entgegen, beantwortet Fragen, nimmt Terminwünsche entgegen und leitet Anliegen zuverlässig weiter – <span className="font-bold">damit Ihr Team entlastet bleibt und kein Anruf verloren geht.</span>
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1 }}
-              className="mt-10 flex items-center gap-x-6 justify-center lg:justify-start"
+              className="mt-10 flex flex-col sm:flex-row items-center gap-y-4 sm:gap-y-0 gap-x-4 justify-center lg:justify-start"
             >
               <a
-                href="#"
-                className="rounded-lg bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
+                href="tel:03021924300"
+                className="flex items-center justify-center gap-x-2 rounded-xl bg-[#1A371C] px-5 py-3 w-60 sm:w-auto text-sm font-semibold text-white hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
               >
-                Gespräch vereinbaren
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+                </svg>
+                Emma anrufen
               </a>
+              
+              <button
+                onClick={toggleAudio}
+                className="flex items-center justify-center gap-x-2 rounded-xl bg-white border border-gray-200 px-5 py-3 w-60 sm:w-auto text-sm font-semibold text-gray-700 hover:bg-gray-50 font-[Instrument_Sans]"
+              >
+                {isPlaying ? (
+                  <>
+                    <PauseIcon className="h-5 w-5 text-[#1A371C]" />
+                    <span>{formatTime(currentTime)} / {formatTime(duration)}</span>
+                  </>
+                ) : (
+                  <>
+                    <PlayIcon className="h-5 w-5 text-[#1A371C]" />
+                    <span> Testgespräch anhören</span>
+                  </>
+                )}
+              </button>
             </motion.div>
           </motion.div>
           <motion.div 
@@ -277,36 +316,18 @@ export default function Example() {
             className="mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow-0 lg:pl-6 relative"
           >
             <Image 
-              src="/images/emma-phone-mockup.png" 
+              src="/images/emma-phone-mockup-4.png" 
               alt="Emma App Screenshot" 
               width={366}
               height={732}
               className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
             />
             
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 1.2 }}
-              className="absolute inset-0 flex items-center justify-center"
-            >
-              <button
-                onClick={toggleAudio}
-                className="bg-white/80 backdrop-blur-sm p-4 rounded-full shadow-lg hover:bg-white/90 transition-all"
-                aria-label={isPlaying ? "Pause audio" : "Play audio"}
-              >
-                {isPlaying ? (
-                  <PauseIcon className="h-8 w-8 text-[#1A371C]" />
-                ) : (
-                  <PlayIcon className="h-8 w-8 text-[#1A371C]" />
-                )}
-              </button>
-              {audioError && (
-                <div className="absolute bottom-0 left-0 right-0 bg-red-500 text-white text-sm py-1 px-2 text-center rounded-b-lg">
-                  {audioError}
-                </div>
-              )}
-            </motion.div>
+            {audioError && (
+              <div className="absolute bottom-0 left-0 right-0 bg-red-500 text-white text-sm py-1 px-2 text-center rounded-b-lg">
+                {audioError}
+              </div>
+            )}
             
             <audio 
               ref={audioRef} 
@@ -320,6 +341,22 @@ export default function Example() {
               Your browser does not support the audio element.
             </audio>
           </motion.div>
+        </div>
+      </div>
+
+      {/* Mobile Sticky CTA Button - hidden on lg screens and above */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
+        {/* Full-width blurred background bar */}
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm shadow-lg"></div>
+        
+        {/* Centered button */}
+        <div className="relative flex justify-center px-4 py-4">
+          <a
+            href="#"
+            className="flex w-full items-center justify-center gap-x-2 rounded-xl bg-[#1A371C] px-6 py-3 text-base font-semibold text-white shadow-lg hover:bg-[#1A371C]/90 font-[Instrument_Sans] transition-all"
+          >
+            Demo vereinbaren
+          </a>
         </div>
       </div>
     </div>
