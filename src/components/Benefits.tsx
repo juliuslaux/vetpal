@@ -1,32 +1,32 @@
 'use client'
 
 import React from 'react';
-import { ClockIcon, PencilSquareIcon, ShieldCheckIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import { ArrowTrendingUpIcon, ClockIcon, PencilSquareIcon, ShieldCheckIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
     name: '24/7 Erreichbarkeit',
     description:
-      'Mit Emma ist Ihre Praxis immer erreichbar. Auch bei mehreren Anrufen gleichzeitig läuft keine Anfrage ins Leere.',
+      'Ermöglichen Sie 24/7 Erreichbarkeit. Keine verpassten Neukundenanfragen mehr, auch bei parallelen Anrufen.',
     icon: ClockIcon,
   },
   {
-    name: 'Echte Entlastung',
+    name: 'Kein Stress mehr am Telefon',
     description:
-      'Emma übernimmt Anrufe, wenn es in der Praxis zu viel wird, und gibt Ihrem Team Raum für produktives Arbeiten ohne Unterbrechungen.',
+      'Keine ständigen Anrufe mehr – konzentrieren Sie sich voll auf Ihre PatientInnen und telefonieren Sie nur, wenn Sie es möchten.',
     icon: UserGroupIcon,
   },
   {
-    name: 'Volle Kontrolle',
+    name: 'Praxis-Effizienz steigern',
     description:
-      'Emma passt sich Ihren individuellen Präferenzen an. In unserer Web-App können Sie Emma individuell anpassen, ganz nach Ihren Wünschen.',
-    icon: PencilSquareIcon,
+      'Arbeiten Sie unterbrechungsfrei – klare Aufgabenverteilung und automatische Terminbuchungen steigern die Produktivität Ihres Teams.',
+    icon: ArrowTrendingUpIcon,
   },
   {
-    name: 'Datensicherheit',
+    name: 'Individuell anpassbar',
     description:
-      'Wir legen größten Wert auf das Thema Datenschutz. Mit Emma erfüllen wir alle Vorgaben der DSGVO – sowohl bei der Datenverarbeitung als auch bei der Datenspeicherung.',
-    icon: ShieldCheckIcon,
+      'In unserer Web-App können Sie Emma individuell konfigurieren und entscheiden welche Anrufe Emma abnimmt, wie sie sich verhält und welche Informationen sie sammelt.',
+    icon: PencilSquareIcon,
   },
 ]
 
