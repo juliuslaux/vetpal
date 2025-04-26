@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { BuildingOffice2Icon, EnvelopeIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { BuildingOffice2Icon, EnvelopeIcon } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Footer from '@/components/Footer'

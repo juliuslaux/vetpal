@@ -1,8 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
+import { Dialog } from '@headlessui/react'
 import { PlayIcon, PauseIcon } from '@heroicons/react/20/solid'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'

@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
 import { motion, AnimatePresence } from 'framer-motion'
 import Footer from '@/components/Footer'
 import Image from 'next/image'

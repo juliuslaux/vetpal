@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import { ArrowTrendingUpIcon, ClockIcon, PencilSquareIcon, ShieldCheckIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import { ArrowTrendingUpIcon, ClockIcon, PencilSquareIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
