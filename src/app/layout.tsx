@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
   },
   manifest: '/manifest.json',
-  themeColor: '#1A371C',
+  themeColor: '#FFFFFF',
   viewport: {
     width: 'device-width',
     initialScale: 1,
