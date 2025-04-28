@@ -107,6 +107,16 @@ export default function Footer() {
                 </motion.a>
               ))}
             </div>
+            <div className="mt-6">
+              <motion.a
+                href="https://cal.com/julius-laux-jwwslf/vetpal-demo"
+                className="inline-block rounded-xl bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Gespräch vereinbaren
+              </motion.a>
+            </div>
           </div>
 
           {/* Right columns */}

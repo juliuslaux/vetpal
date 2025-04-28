@@ -70,7 +70,7 @@ export default function Impressum() {
             </div>
             <div className="flex items-center gap-x-4 lg:hidden">
               <a
-                href="#"
+                href="https://cal.com/julius-laux-jwwslf/vetpal-demo"
                 className="rounded-xl bg-[#1A371C] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
               >
                 Gespräch vereinbaren
@@ -85,7 +85,7 @@ export default function Impressum() {
               ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" className="rounded-xl bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]">
+              <a href="https://cal.com/julius-laux-jwwslf/vetpal-demo" className="rounded-xl bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]">
                 Gespräch vereinbaren
               </a>
             </div>
@@ -134,7 +134,7 @@ export default function Impressum() {
                         </div>
                         <div className="py-6">
                           <a
-                            href="#"
+                            href="https://cal.com/julius-laux-jwwslf/vetpal-demo"
                             className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-[#1A371C] hover:bg-[#1A371C]/90 font-[Instrument_Sans] text-center"
                           >
                             Gespräch vereinbaren
