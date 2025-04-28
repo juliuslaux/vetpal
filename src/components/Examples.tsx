@@ -7,32 +7,32 @@ const exampleCards = [
   {
     title: 'Terminbuchung',
     description: 'Emma erkennt, ob es sich um einen Neu- oder Bestandskunden handelt. Sie nimmt relevante Informationen auf und erstellt ein Rückrufticket oder leitet bei Bedarf an die Praxis weiter – ganz ohne Wartezeit für den Anrufer.',
-    audioSrc: '/audio/terminbuchung.mp3'
+    audioSrc: '/audio/neukunde-terminbuchung.MP3'
   },
   {
     title: 'Behandlungsinformationen',
     description: 'Ob Kastration, Impfungen oder Nachsorge – Emma erklärt Abläufe und gibt wichtige Hinweise zur Vorbereitung. So fühlen sich Tierhalter bestens informiert, auch wenn gerade niemand in der Praxis erreichbar ist.',
-    audioSrc: '/audio/terminverschiebung.mp3'
+    audioSrc: '/audio/behandlungsinformationen.MP3'
   },
   {
     title: 'Notfallweiterleitung',
     description: 'Im Notfall zählt jede Sekunde. Emma erkennt kritische Situationen sofort und verbindet den Anruf direkt mit der Praxis oder der Notfallversorgung – ohne Umwege.',
-    audioSrc: '/audio/terminabsage.mp3'
+    audioSrc: '/audio/notfallweiterleitung.MP3'
   },
   {
     title: 'Rückrufanfragen',
     description: 'Wenn es gerade stressig ist, nimmt Emma Rückrufwünsche entgegen, dokumentiert alle Details und sorgt dafür, dass das Praxisteam bestens vorbereitet zurückrufen kann – und der Anrufer sich abgeholt fühlt.',
-    audioSrc: '/audio/reparatur.mp3'
+    audioSrc: '/audio/Rückrufticket.MP3'
   },
   {
     title: 'Organisatorische und administrative Fragen',
     description: 'Emma hilft bei Fragen zu Praxisinformationen, Preisen und Rechnungen und sorgt dafür, dass der Anrufer alle nötigen Informationen erhält.',
-    audioSrc: '/audio/fragen.mp3'
+    audioSrc: '/audio/organisatorische-frage.MP3'
   },
   {
     title: 'Medizinische Fragen',
     description: 'Emma hilft bei Fragen zu Medikamenten, Symptomen und allen anderen Themen, die Ihre Patienten haben.',
-    audioSrc: '/audio/weiterleitung.mp3'
+    audioSrc: '/audio/medizinische-frage.MP3'
   }
 ];
 
