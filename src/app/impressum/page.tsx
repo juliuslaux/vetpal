@@ -160,39 +160,24 @@ export default function Impressum() {
           <div className="prose max-w-3xl font-[Instrument_Sans] text-[#5e6159]">
             <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">Angaben gemäß § 5 TMG</h2>
             <p className="text-[#5e6159]">
-              VetPal UG (haftungsbeschränkt)<br />
+              VetPal UG (haftungsbeschränkt) i. G.<br />
               Donaustraße 44<br />
               12403 Berlin
             </p>
 
             <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">Vertreten durch</h2>
             <p>
-              Julius Laux<br />
-              Geschäftsführer
+              Julius Laux, Simon Westenhoff, Laurent Lauener
             </p>
 
             <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">Kontakt</h2>
             <p>
-              Telefon: [Ihre Telefonnummer]<br />
               E-Mail: info@vetpal.de
-            </p>
-
-            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">Registereintrag</h2>
-            <p>
-              Eintragung im Handelsregister.<br />
-              Registergericht: Amtsgericht Berlin-Charlottenburg<br />
-              Registernummer: HRB [Ihre Nummer]
-            </p>
-
-            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">Umsatzsteuer-ID</h2>
-            <p>
-              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-              DE [Ihre USt-IdNr.]
             </p>
 
             <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
             <p>
-              Julius Laux<br />
+              vetpal UG (haftungsbeschränkt) i. G.<br />
               Donaustraße 44<br />
               12403 Berlin
             </p>
