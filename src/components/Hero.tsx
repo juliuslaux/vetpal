@@ -113,12 +113,6 @@ export default function Example() {
   const toggleAudio = async () => {
     if (!audioRef.current) return;
     
-    // Don't attempt to play if audio isn't loaded yet
-    if (!audioLoaded) {
-      setAudioError('Audio not fully loaded yet. Please try again.');
-      return;
-    }
-
     try {
       const audio = audioRef.current;
 
@@ -129,10 +123,21 @@ export default function Example() {
         // Reset audio position
         audio.currentTime = 0;
         
-        // iOS requires user interaction to play audio
-        // This should be called directly from the click handler
-        await audio.play();
-        setIsPlaying(true);
+        // Try to play audio with user interaction
+        const playPromise = audio.play();
+        
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              setIsPlaying(true);
+              setAudioError(null);
+            })
+            .catch(error => {
+              console.error("Audio playback error:", error);
+              setAudioError('Audiowiedergabe nicht möglich. Bitte versuchen Sie es erneut.');
+              setIsPlaying(false);
+            });
+        }
       }
     } catch (error) {
       console.error("Audio playback error:", error);
@@ -415,8 +420,7 @@ export default function Example() {
               playsInline
               controls={false}
             >
-              <source src="/audio/Rückrufticket.MP3" type="audio/mp4" />
-              <source src="/audio/Rückrufticket.MP3" type="audio/x-m4a" />
+              <source src="/audio/Ruckrufticket.MP3" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
             
