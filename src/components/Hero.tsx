@@ -54,7 +54,6 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
   const [scrollY, setScrollY] = useState(0)
-  const [audioLoaded, setAudioLoaded] = useState(false)
   const [audioError, setAudioError] = useState<string | null>(null)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
@@ -78,7 +77,6 @@ export default function Example() {
       
       // Add event listeners for better error handling
       audio.addEventListener('loadeddata', () => {
-        setAudioLoaded(true);
         setAudioError(null);
         setDuration(audio.duration);
       });
@@ -98,7 +96,7 @@ export default function Example() {
       // Cleanup
       return () => {
         audio.removeEventListener('loadeddata', () => {
-          setAudioLoaded(true);
+          setAudioError(null);
         });
         audio.removeEventListener('error', () => {
           setAudioError('Error loading audio');
