@@ -57,6 +57,7 @@ export default function Contact() {
     email: '',
     phone: '',
     company: '',
+    website: '',
     message: '',
   })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -90,6 +91,7 @@ export default function Contact() {
         email: '',
         phone: '',
         company: '',
+        website: '',
         message: '',
       })
 
@@ -355,6 +357,22 @@ export default function Contact() {
                       name="company"
                       id="company"
                       value={formData.company}
+                      onChange={handleChange}
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
+                    />
+                  </div>
+                </div>
+                <div className="sm:col-span-2">
+                  <label htmlFor="website" className="block text-sm font-semibold leading-6 text-gray-900 font-[Instrument_Sans]">
+                    Website
+                  </label>
+                  <div className="mt-2.5">
+                    <input
+                      type="url"
+                      name="website"
+                      id="website"
+                      placeholder="https://www.ihre-praxis.de"
+                      value={formData.website}
                       onChange={handleChange}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
                     />
