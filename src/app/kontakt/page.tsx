@@ -52,8 +52,7 @@ const BurgerButton = ({ isOpen, onClick }: { isOpen: boolean; onClick: () => voi
 export default function Contact() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
     email: '',
     phone: '',
     company: '',
@@ -69,25 +68,32 @@ export default function Contact() {
     setErrorMessage('')
 
     try {
-      const response = await fetch('/api/contact', {
+      // Transform data before sending to match the required field names
+      const webhookData = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company_name: formData.company,
+        company_website: formData.website,
+        message: formData.message,
+      }
+
+      const response = await fetch('https://hook.eu2.make.com/gvietel207h13kyn99udnhof7javheqy', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(webhookData),
       })
 
-      const data = await response.json()
-
       if (!response.ok) {
-        throw new Error(data.error || 'Something went wrong')
+        throw new Error('Fehler beim Senden des Formulars. Bitte versuchen Sie es später erneut.')
       }
 
       setStatus('success')
       // Reset form
       setFormData({
-        firstName: '',
-        lastName: '',
+        name: '',
         email: '',
         phone: '',
         company: '',
@@ -101,7 +107,7 @@ export default function Contact() {
       }, 5000)
     } catch (error) {
       setStatus('error')
-      setErrorMessage(error instanceof Error ? error.message : 'Something went wrong')
+      setErrorMessage(error instanceof Error ? error.message : 'Etwas ist schiefgelaufen')
     }
   }
 
@@ -283,33 +289,17 @@ export default function Contact() {
               )}
 
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-semibold leading-6 text-gray-900 font-[Instrument_Sans]">
-                    Vorname
+                <div className="sm:col-span-2">
+                  <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900 font-[Instrument_Sans]">
+                    Name
                   </label>
                   <div className="mt-2.5">
                     <input
                       type="text"
-                      name="firstName"
-                      id="firstName"
-                      autoComplete="given-name"
-                      value={formData.firstName}
-                      onChange={handleChange}
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-semibold leading-6 text-gray-900 font-[Instrument_Sans]">
-                    Nachname
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="text"
-                      name="lastName"
-                      id="lastName"
-                      autoComplete="family-name"
-                      value={formData.lastName}
+                      name="name"
+                      id="name"
+                      autoComplete="name"
+                      value={formData.name}
                       onChange={handleChange}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
                     />
