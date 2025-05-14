@@ -17,6 +17,7 @@ const navigation = {
   legal: [
     { name: 'Impressum', href: '/impressum' },
     { name: 'Datenschutzerklärung', href: '/datenschutz' },
+    { name: 'AGB', href: '/agb' },
     { name: 'AVV', href: '/auftragsverarbeitung' },
   ],
   social: [
