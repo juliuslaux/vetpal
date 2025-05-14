@@ -171,7 +171,7 @@ export default function Datenschutz() {
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Datenerfassung auf dieser Website</h3>
             <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
             <p>
-              Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Die Kontaktdaten können Sie dem Abschnitt "Hinweis zur verantwortlichen Stelle" entnehmen.
+              Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Die Kontaktdaten können Sie dem Abschnitt &quot;Hinweis zur verantwortlichen Stelle&quot; entnehmen.
             </p>
 
             <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">Wie erfassen wir Ihre Daten?</h4>

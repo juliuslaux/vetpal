@@ -161,7 +161,7 @@ export default function AGB() {
           <div className="prose max-w-3xl font-[Instrument_Sans] text-[#5e6159]">
             <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 1 Geltungsbereich</h2>
             <p className="text-[#5e6159]">
-              (1) Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge über die Nutzung der durch die Vetpal UG (haftungsbeschränkt) i.G., Donaustraße 44, 12043 Berlin (nachfolgend "Vetpal"), bereitgestellten Dienstleistungen durch Unternehmer im Sinne von § 14 BGB, insbesondere tierärztliche Praxen und Kliniken (nachfolgend "Kunde").
+              (1) Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge über die Nutzung der durch die Vetpal UG (haftungsbeschränkt) i.G., Donaustraße 44, 12043 Berlin (nachfolgend &quot;Vetpal&quot;), bereitgestellten Dienstleistungen durch Unternehmer im Sinne von § 14 BGB, insbesondere tierärztliche Praxen und Kliniken (nachfolgend &quot;Kunde&quot;).
             </p>
             <p className="text-[#5e6159]">
               (2) Abweichende Geschäftsbedingungen des Kunden finden keine Anwendung, es sei denn, sie werden durch Vetpal ausdrücklich schriftlich bestätigt.
@@ -169,7 +169,7 @@ export default function AGB() {
 
             <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 2 Vertragsgegenstand und Leistungen</h2>
             <p>
-              (1) Vetpal stellt dem Kunde einen KI-gestützten digitalen Telefonassistenten (nachfolgend "Vetpal-Agent") zur Verfügung, der insbesondere Anrufe entgegennimmt, priorisiert, weiterleitet und grundlegende administrative Aufgaben unterstützt.
+              (1) Vetpal stellt dem Kunden einen KI-gestützten digitalen Telefonassistenten (nachfolgend &quot;Vetpal-Agent&quot;) zur Verfügung, der insbesondere Anrufe entgegennimmt, priorisiert, weiterleitet und grundlegende administrative Aufgaben unterstützt.
             </p>
             <p>
               (2) Der Vetpal-Agent ist auf die Bedürfnisse tierärztlicher Einrichtungen zugeschnitten, insbesondere im Hinblick auf potenzielle Notfälle, ersetzt jedoch keine medizinische Einschätzung.
