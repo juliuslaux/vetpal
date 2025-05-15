@@ -10,9 +10,7 @@ const navigation = {
     { name: 'Vorteile', href: '#benefits' },
     { name: "So Funktioniert's", href: '#how-it-works' },
     { name: 'Anwendungsfälle', href: '#examples' },
-    { name: 'FAQs', href: '#faqs' },
     { name: 'Team', href: '#team' },
-    { name: 'Kontakt', href: '/kontakt' },
   ],
   legal: [
     { name: 'Impressum', href: '/impressum' },
@@ -107,16 +105,6 @@ export default function Footer() {
                   <item.icon aria-hidden="true" className="size-6" />
                 </motion.a>
               ))}
-            </div>
-            <div className="mt-6">
-              <motion.a
-                href="https://cal.com/julius-laux-jwwslf/vetpal-demo"
-                className="inline-block rounded-xl bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                Gespräch vereinbaren
-              </motion.a>
             </div>
           </div>
 

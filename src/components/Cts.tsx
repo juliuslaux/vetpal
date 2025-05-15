@@ -17,10 +17,10 @@ export default function Cts() {
               </p>
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-x-6">
                 <a
-                  href="#"
+                  href="/kontakt"
                   className="w-full sm:w-auto rounded-xl bg-[#1A371C] px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#2A472C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A371C] font-[Instrument_Sans]"
                 >
-                  Gespräch vereinbaren
+                  Jetzt Testzugang anfragen
                 </a>
                 <a href="#" className="text-sm/6 font-semibold text-[#1A371C] font-[Instrument_Sans]">
                   Mehr erfahren <span aria-hidden="true">→</span>

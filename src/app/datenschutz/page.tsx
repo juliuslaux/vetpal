@@ -11,8 +11,6 @@ const navigation = [
   { name: 'Vorteile', href: '/#benefits' },
   { name: "So Funktioniert's", href: '/#how-it-works' },
   { name: 'Anwendungsfälle', href: '/#examples' },
-  { name: 'FAQs', href: '/#faqs' },
-  { name: 'Kontakt', href: '/kontakt' },
 ]
 
 // Custom burger menu button component
@@ -50,7 +48,7 @@ const BurgerButton = ({ isOpen, onClick }: { isOpen: boolean; onClick: () => voi
 
 export default function Datenschutz() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  
   return (
     <main>
       <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
@@ -69,12 +67,6 @@ export default function Datenschutz() {
               </Link>
             </div>
             <div className="flex items-center gap-x-4 lg:hidden">
-              <a
-                href="https://cal.com/julius-laux-jwwslf/vetpal-demo"
-                className="rounded-xl bg-[#1A371C] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
-              >
-                Gespräch vereinbaren
-              </a>
               <BurgerButton isOpen={mobileMenuOpen} onClick={() => setMobileMenuOpen(!mobileMenuOpen)} />
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
@@ -84,7 +76,7 @@ export default function Datenschutz() {
                 </a>
               ))}
             </div>
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-4">
               <a href="https://cal.com/julius-laux-jwwslf/vetpal-demo" className="rounded-xl bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]">
                 Gespräch vereinbaren
               </a>
@@ -302,6 +294,7 @@ export default function Datenschutz() {
           </div>
         </div>
       </div>
+      
       <Footer />
     </main>
   )

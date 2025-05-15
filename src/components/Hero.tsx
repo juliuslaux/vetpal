@@ -12,8 +12,6 @@ const navigation = [
   { name: "So Funktioniert's", href: '/#how-it-works' },
   { name: 'Vorteile', href: '/#benefits' },
   { name: 'Anwendungsfälle', href: '/#examples' },
-  { name: 'FAQs', href: '/#faqs' },
-  { name: 'Kontakt', href: '/kontakt' },
 ]
 
 // Custom burger menu button component
@@ -63,7 +61,7 @@ export default function Example() {
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY)
-      setShowStickyButton(window.scrollY > 400)
+      setShowStickyButton(window.scrollY > 200)
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
@@ -205,7 +203,10 @@ export default function Example() {
                 </a>
               ))}
             </div>
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-4">
+              <a href="/kontakt" className="rounded-xl bg-[#67986B] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#67986B]/90 font-[Instrument_Sans]">
+                Kostenlos Testen
+              </a>
               <a href="https://cal.com/julius-laux-jwwslf/vetpal-demo" className="rounded-xl bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]">
                 Gespräch vereinbaren
               </a>
@@ -255,6 +256,12 @@ export default function Example() {
                           ))}
                         </div>
                         <div className="py-6">
+                          <a
+                            href="/kontakt"
+                            className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-[#67986B] hover:bg-[#67986B]/90 font-[Instrument_Sans] text-center mb-3"
+                          >
+                            Kostenlos Testen
+                          </a>
                           <a
                             href="https://cal.com/julius-laux-jwwslf/vetpal-demo"
                             className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-[#1A371C] hover:bg-[#1A371C]/90 font-[Instrument_Sans] text-center"
@@ -481,10 +488,10 @@ export default function Example() {
             {/* Centered button */}
             <div className="relative flex justify-center px-4 py-4">
               <a
-                href="https://cal.com/julius-laux-jwwslf/vetpal-demo"
+                href="/kontakt"
                 className="flex w-full items-center justify-center gap-x-2 rounded-xl bg-[#1A371C] px-6 py-3 text-base font-semibold text-white shadow-lg hover:bg-[#1A371C]/90 font-[Instrument_Sans] transition-all"
               >
-                Demo vereinbaren
+                Kostenlos Testzugang anfordern
               </a>
             </div>
           </motion.div>

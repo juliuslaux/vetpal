@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { BuildingOffice2Icon, EnvelopeIcon } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -12,8 +12,6 @@ const navigation = [
   { name: 'Vorteile', href: '/#benefits' },
   { name: "So Funktioniert's", href: '/#how-it-works' },
   { name: 'Anwendungsfälle', href: '/#examples' },
-  { name: 'FAQs', href: '/#faqs' },
-  { name: 'Kontakt', href: '/kontakt' },
 ]
 
 // Custom burger menu button component
@@ -57,11 +55,10 @@ export default function Contact() {
     phone: '',
     company: '',
     website: '',
-    message: '',
   })
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
-
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('loading')
@@ -75,7 +72,6 @@ export default function Contact() {
         phone: formData.phone,
         company_name: formData.company,
         company_website: formData.website,
-        message: formData.message,
       }
 
       const response = await fetch('https://hook.eu2.make.com/gvietel207h13kyn99udnhof7javheqy', {
@@ -98,7 +94,6 @@ export default function Contact() {
         phone: '',
         company: '',
         website: '',
-        message: '',
       })
 
       // Reset success status after 5 seconds
@@ -136,12 +131,6 @@ export default function Contact() {
               </Link>
             </div>
             <div className="flex items-center gap-x-4 lg:hidden">
-              <a
-                href="https://cal.com/julius-laux-jwwslf/vetpal-demo"
-                className="rounded-xl bg-[#1A371C] px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]"
-              >
-                Gespräch vereinbaren
-              </a>
               <BurgerButton isOpen={mobileMenuOpen} onClick={() => setMobileMenuOpen(!mobileMenuOpen)} />
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
@@ -151,7 +140,7 @@ export default function Contact() {
                 </a>
               ))}
             </div>
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-4">
               <a href="https://cal.com/julius-laux-jwwslf/vetpal-demo" className="rounded-xl bg-[#1A371C] px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#1A371C]/90 font-[Instrument_Sans]">
                 Gespräch vereinbaren
               </a>
@@ -222,34 +211,12 @@ export default function Contact() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
             <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-              <h2 className="text-3xl font-semibold tracking-tight text-[#1A371C] font-[Instrument_Sans]">Kontaktieren Sie uns</h2>
+              <h2 className="text-3xl font-semibold tracking-tight text-[#1A371C] font-[Instrument_Sans]">Jetzt Testzugang anfragen</h2>
               <p className="mt-6 text-lg leading-8 text-gray-600 font-[Instrument_Sans]">
-                Sie möchten Emma in Ihrer Praxis einsetzen? Wir freuen uns darauf, Sie kennenzulernen und Ihnen Emma vorzustellen.
+                Erlebe, wie unsere virtuelle Telefonassistentin Emma deinen Praxisalltag erleichtert!<br />
+                Fordere jetzt unverbindlich einen Testzugriff an und überzeuge dich selbst von Emmas Fähigkeiten am Telefon.<br />
+                Fülle dazu einfach das folgende Formular aus, damit wir deine Anfrage bearbeiten können.
               </p>
-              <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Address</span>
-                    <BuildingOffice2Icon className="h-7 w-6 text-[#1A371C]" aria-hidden="true" />
-                  </dt>
-                  <dd className="font-[Instrument_Sans]">
-                    VetPal UG (haftungsbeschränkt)<br />
-                    Donaustraße 44<br />
-                    12403 Berlin
-                  </dd>
-                </div>
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Email</span>
-                    <EnvelopeIcon className="h-7 w-6 text-[#1A371C]" aria-hidden="true" />
-                  </dt>
-                  <dd>
-                    <a className="hover:text-[#1A371C] font-[Instrument_Sans]" href="mailto:info@vetpal.de">
-                      info@vetpal.de
-                    </a>
-                  </dd>
-                </div>
-              </dl>
             </div>
           </div>
           <form onSubmit={handleSubmit} className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
@@ -301,6 +268,7 @@ export default function Contact() {
                       autoComplete="name"
                       value={formData.name}
                       onChange={handleChange}
+                      placeholder="Dr. Melanie Schmidt"
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
                     />
                   </div>
@@ -317,13 +285,14 @@ export default function Contact() {
                       autoComplete="email"
                       value={formData.email}
                       onChange={handleChange}
+                      placeholder="info@tierklinik-schmidt.de"
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
                     />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-gray-900 font-[Instrument_Sans]">
-                    Telefon
+                    Telefonnummer
                   </label>
                   <div className="mt-2.5">
                     <input
@@ -333,6 +302,7 @@ export default function Contact() {
                       autoComplete="tel"
                       value={formData.phone}
                       onChange={handleChange}
+                      placeholder="+49 151 1234 5678"
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
                     />
                   </div>
@@ -348,6 +318,7 @@ export default function Contact() {
                       id="company"
                       value={formData.company}
                       onChange={handleChange}
+                      placeholder="Tierklinik Dr. Schmidt GmbH"
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
                     />
                   </div>
@@ -361,23 +332,8 @@ export default function Contact() {
                       type="url"
                       name="website"
                       id="website"
-                      placeholder="https://www.ihre-praxis.de"
+                      placeholder="https://www.tierklinik-schmidt.de"
                       value={formData.website}
-                      onChange={handleChange}
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
-                    />
-                  </div>
-                </div>
-                <div className="sm:col-span-2">
-                  <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900 font-[Instrument_Sans]">
-                    Nachricht
-                  </label>
-                  <div className="mt-2.5">
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows={4}
-                      value={formData.message}
                       onChange={handleChange}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#1A371C] sm:text-sm sm:leading-6 font-[Instrument_Sans]"
                     />
@@ -388,17 +344,18 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className={`rounded-md bg-[#1A371C] px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#1A371C]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A371C] font-[Instrument_Sans] ${
+                  className={`rounded-xl bg-[#1A371C] px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#1A371C]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A371C] font-[Instrument_Sans] ${
                     status === 'loading' ? 'opacity-75 cursor-not-allowed' : ''
                   }`}
                 >
-                  {status === 'loading' ? 'Wird gesendet...' : 'Nachricht senden'}
+                  {status === 'loading' ? 'Wird gesendet...' : 'Absenden'}
                 </button>
               </div>
             </div>
           </form>
         </div>
       </div>
+      
       <Footer />
     </main>
   )
