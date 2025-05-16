@@ -64,13 +64,23 @@ export default function Contact() {
     setErrorMessage('')
 
     try {
+      // Formatiere die Website-URL, falls nötig
+      let formattedWebsite = formData.website;
+      if (formData.website && formData.website.trim() !== '') {
+        // Wenn die URL nicht mit http:// oder https:// beginnt, füge https://www. hinzu
+        if (!formData.website.startsWith('http://') && !formData.website.startsWith('https://')) {
+          // Wenn die URL nicht mit www. beginnt, füge www. hinzu
+          formattedWebsite = 'https://' + (formData.website.startsWith('www.') ? '' : 'www.') + formData.website;
+        }
+      }
+
       // Transform data before sending to match the required field names
       const webhookData = {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
         company_name: formData.company,
-        company_website: formData.website,
+        company_website: formattedWebsite,
       }
 
       const response = await fetch('https://hook.eu2.make.com/gvietel207h13kyn99udnhof7javheqy', {
@@ -328,7 +338,7 @@ export default function Contact() {
                   </label>
                   <div className="mt-2.5">
                     <input
-                      type="url"
+                      type="text"
                       name="website"
                       id="website"
                       placeholder="https://www.tierklinik-schmidt.de"
