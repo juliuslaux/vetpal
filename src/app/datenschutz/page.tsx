@@ -157,33 +157,28 @@ export default function Datenschutz() {
             
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Allgemeine Hinweise</h3>
             <p className="text-[#5e6159]">
-              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie der nachfolgenden Datenschutzerklärung.
+              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie der folgenden Datenschutzerklärung.
             </p>
 
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Datenerfassung auf dieser Website</h3>
             <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
             <p>
-              Die Datenverarbeitung auf dieser Website erfolgt durch die Betreiberin der Website:<br />
-              <br />
-              Vetpal UG (haftungsbeschränkt) i.G.<br />
-              Donaustraße 44<br />
-              12043 Berlin<br />
-              E-Mail: info@vetpal.de
+              Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Die Kontaktdaten können Sie dem Abschnitt &quot;Hinweis zur verantwortlichen Stelle&quot; entnehmen.
             </p>
 
             <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">Wie erfassen wir Ihre Daten?</h4>
             <p>
-              Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen (z. B. durch ein Kontaktformular). Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst – z. B. technische Daten wie Browsertyp, Betriebssystem oder Uhrzeit des Seitenaufrufs.
+              Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen - z. B. über ein Kontaktformular. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Dabei handelt es sich vor allem um technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung erfolgt automatisch, sobald Sie unsere Website betreten.
             </p>
 
             <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">Wofür nutzen wir Ihre Daten?</h4>
             <p>
-              Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere können zur Analyse Ihres Nutzerverhaltens verwendet werden.
+              Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse des Nutzerverhaltens verwendet werden.
             </p>
 
             <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">Welche Rechte haben Sie bezüglich Ihrer Daten?</h4>
             <p>
-              Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten. Zudem können Sie die Berichtigung, Sperrung oder Löschung dieser Daten verlangen. Auch ein Widerruf Ihrer Einwilligung zur Datenverarbeitung ist jederzeit möglich. Darüber hinaus steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+              Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Außerdem haben Sie ein Recht auf Berichtigung oder Löschung dieser Daten sowie auf Einschränkung der Verarbeitung. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese jederzeit für die Zukunft widerrufen. Darüber hinaus haben Sie ein Beschwerderecht bei der zuständigen Aufsichtsbehörde.
             </p>
 
             <div className="border-t border-gray-200 my-8"></div>
@@ -192,10 +187,10 @@ export default function Datenschutz() {
             
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Externes Hosting</h3>
             <p>
-              Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Dabei handelt es sich u. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen und Websitezugriffe.
+              Diese Website wird extern gehostet. Personenbezogene Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Dabei handelt es sich insbesondere um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über die Website generiert werden.
             </p>
             <p>
-              Das Hosting erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und effizienten Bereitstellung unserer Website). Wenn eine entsprechende Einwilligung vorliegt, erfolgt die Verarbeitung zusätzlich auf Basis von Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar.
+              Das Hosting erfolgt zur Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) sowie im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Wenn eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 Abs. 1 TDDDG. Die Einwilligung kann jederzeit widerrufen werden.
             </p>
 
             <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">Unser Hoster ist:</h4>
@@ -208,7 +203,7 @@ export default function Datenschutz() {
 
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Auftragsverarbeitung</h3>
             <p>
-              Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Dieser gewährleistet, dass Ihre Daten nur gemäß unseren Weisungen und unter Einhaltung der DSGVO verarbeitet werden.
+              Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit unserem Hostinganbieter abgeschlossen. Dieser gewährleistet, dass Ihre Daten nur gemäß unseren Weisungen und unter Einhaltung der DSGVO verarbeitet werden.
             </p>
 
             <div className="border-t border-gray-200 my-8"></div>
@@ -217,13 +212,12 @@ export default function Datenschutz() {
             
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Datenschutz</h3>
             <p>
-              Die Betreiberin dieser Website – die Vetpal UG (haftungsbeschränkt) i.G. – nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+              Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
             </p>
 
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Hinweis zur verantwortlichen Stelle</h3>
             <p>
-              Verantwortliche Stelle im Sinne der DSGVO ist:<br />
-              <br />
+              Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br />
               Vetpal UG (haftungsbeschränkt) i.G.<br />
               Donaustraße 44<br />
               12043 Berlin<br />
@@ -232,42 +226,34 @@ export default function Datenschutz() {
 
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Speicherdauer</h3>
             <p>
-              Sofern innerhalb dieser Erklärung keine spezifischere Speicherdauer genannt wird, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt oder Sie Ihr Löschbegehren mitteilen. Gesetzliche Aufbewahrungsfristen bleiben unberührt.
+              Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Bestehen gesetzliche Aufbewahrungsfristen, werden die Daten nach Ablauf dieser Fristen gelöscht.
             </p>
 
-            <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Rechtsgrundlagen der Datenverarbeitung</h3>
+            <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Allgemeine Hinweise zu den Rechtsgrundlagen</h3>
             <p>
-              Die Verarbeitung Ihrer Daten erfolgt je nach Kontext auf Grundlage folgender Rechtsgrundlagen:
+              Ihre Daten werden je nach Kontext auf folgenden Rechtsgrundlagen verarbeitet:
             </p>
             <ul className="list-disc pl-5 mt-2">
-              <li>Art. 6 Abs. 1 lit. a DSGVO – Einwilligung</li>
-              <li>Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung</li>
-              <li>Art. 6 Abs. 1 lit. c DSGVO – Rechtspflicht</li>
-              <li>Art. 6 Abs. 1 lit. f DSGVO – Berechtigtes Interesse</li>
-              <li>§ 25 Abs. 1 TDDDG – Einwilligung bei Endgerätezugriff</li>
+              <li>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, ggf. Art. 9 Abs. 2 lit. a DSGVO)</li>
+              <li>Vertrag/Vertragsanbahnung (Art. 6 Abs. 1 lit. b DSGVO)</li>
+              <li>Rechtliche Verpflichtung (Art. 6 Abs. 1 lit. c DSGVO)</li>
+              <li>Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)</li>
+              <li>Einwilligung im Sinne von § 25 Abs. 1 TDDDG (z. B. bei Cookies)</li>
             </ul>
 
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Empfänger von personenbezogenen Daten</h3>
             <p>
-              Wir geben personenbezogene Daten nur weiter, wenn dies gesetzlich erlaubt ist oder zur Vertragserfüllung notwendig. Bei der Zusammenarbeit mit Auftragsverarbeitern schließen wir entsprechende Vereinbarungen ab.
+              Wir geben Ihre Daten nur weiter, wenn dies gesetzlich erlaubt ist, z. B. bei Vertragserfüllung, berechtigtem Interesse oder gesetzlicher Pflicht. Bei Auftragsverarbeitung erfolgt dies nur auf Basis entsprechender Verträge.
             </p>
 
-            <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Ihre Rechte</h3>
+            <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
             <p>
-              Sie haben unter anderem folgende Rechte:
+              Sie können Ihre Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der Verarbeitung bis zum Widerruf bleibt unberührt.
             </p>
-            <ul className="list-disc pl-5 mt-2">
-              <li>Widerruf Ihrer Einwilligung</li>
-              <li>Widerspruch gegen Verarbeitung (Art. 21 DSGVO)</li>
-              <li>Beschwerderecht bei Aufsichtsbehörden</li>
-              <li>Auskunft, Berichtigung, Löschung</li>
-              <li>Einschränkung der Verarbeitung</li>
-              <li>Datenübertragbarkeit</li>
-            </ul>
 
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Widerspruch gegen Werbe-E-Mails</h3>
             <p>
-              Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur unverlangten Werbung wird widersprochen. Rechtliche Schritte im Falle von Spam bleiben vorbehalten.
+              Der Nutzung unserer Kontaktdaten zur Übersendung nicht ausdrücklich angeforderter Werbung wird widersprochen.
             </p>
 
             <div className="border-t border-gray-200 my-8"></div>
@@ -276,8 +262,8 @@ export default function Datenschutz() {
             
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Cookies</h3>
             <p>
-              Unsere Website verwendet sogenannte Cookies. Diese dienen der Benutzerfreundlichkeit sowie Analysezwecken. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO bzw. – bei Einwilligung – Art. 6 Abs. 1 lit. a DSGVO i.V.m. § 25 Abs. 1 TDDDG.
-              <br />Sie können Ihre Browser-Einstellungen so anpassen, dass Sie über Cookies informiert werden oder diese vollständig ablehnen. Die Funktionalität unserer Website kann dadurch eingeschränkt sein.
+              Unsere Website verwendet Cookies. Technisch notwendige Cookies dienen der Bereitstellung bestimmter Funktionen. Andere Cookies helfen uns, die Nutzung zu analysieren oder unser Angebot zu optimieren. Die Speicherung erfolgt je nach Zweck auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO oder nach Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 TDDDG).
+              Sie können Ihre Einstellungen im Browser anpassen und Cookies löschen oder blockieren.
             </p>
 
             <div className="border-t border-gray-200 my-8"></div>
@@ -286,8 +272,8 @@ export default function Datenschutz() {
             
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Newsletterdaten</h3>
             <p>
-              Wenn Sie unseren Newsletter abonnieren, benötigen wir Ihre E-Mail-Adresse und Ihre Einwilligung. Diese Einwilligung kann jederzeit widerrufen werden. Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO.
-              <br />Bei Austragung aus dem Verteiler kann Ihre E-Mail-Adresse in eine Blacklist aufgenommen werden, um zukünftige Zusendungen zu verhindern.
+              Wenn Sie unseren Newsletter abonnieren, verwenden wir Ihre E-Mail-Adresse ausschließlich für diesen Zweck. Die Verarbeitung erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
+              Sie können sich jederzeit abmelden. Ihre Daten werden anschließend gelöscht oder in eine Blacklist aufgenommen, sofern dies zur Vermeidung künftiger Zusendungen erforderlich ist.
             </p>
 
             <div className="border-t border-gray-200 my-8"></div>
@@ -296,50 +282,14 @@ export default function Datenschutz() {
             
             <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Google Fonts</h3>
             <p>
-              Zur einheitlichen Darstellung nutzt unsere Website Google Fonts. Beim Laden der Seite wird Ihre IP-Adresse an Google übermittelt. Die Nutzung basiert auf Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen:<br />
+              Zur einheitlichen Darstellung von Schriftarten nutzt diese Website Google Fonts. Beim Laden der Fonts wird eine Verbindung zu Google-Servern hergestellt. Dabei wird Ihre IP-Adresse übermittelt.
+              Die Nutzung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO bzw. nach Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 TDDDG). Weitere Infos:<br />
               <a href="https://developers.google.com/fonts/faq" className="text-[#1A371C] hover:underline">https://developers.google.com/fonts/faq</a><br />
               <a href="https://policies.google.com/privacy" className="text-[#1A371C] hover:underline">https://policies.google.com/privacy</a>
             </p>
             <p>
               Google ist nach dem EU-US Data Privacy Framework zertifiziert:<br />
               <a href="https://www.dataprivacyframework.gov/participant/5780" className="text-[#1A371C] hover:underline">https://www.dataprivacyframework.gov/participant/5780</a>
-            </p>
-
-            <div className="border-t border-gray-200 my-8"></div>
-
-            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">7. Drittanbieter-Dienste und Datenübermittlung in Drittländer</h2>
-            
-            <p>
-              Im Rahmen unserer Geschäftstätigkeit setzen wir verschiedene Softwaredienste externer Anbieter ein. Dabei kann es zur Übermittlung personenbezogener Daten an Drittstaaten außerhalb der Europäischen Union (insbesondere die USA) kommen. Die Verarbeitung erfolgt nur auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG) oder bei Vorliegen geeigneter Garantien im Sinne von Art. 44 ff. DSGVO.
-            </p>
-            <p>
-              Wir haben mit allen Dienstleistern, soweit gesetzlich erforderlich, Auftragsverarbeitungsverträge (AVV) abgeschlossen.
-            </p>
-            
-            <h3 className="text-lg font-semibold text-[#1A371C] mt-6 mb-3">Eingesetzte Drittanbieterdienste im Überblick:</h3>
-            
-            <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">1. OpenAI (ChatGPT, API-Nutzung)</h4>
-            <p>
-              Anbieter: OpenAI, L.L.C., 3180 18th Street, San Francisco, CA 94110, USA<br />
-              Zweck: Verarbeitung natürlicher Sprache<br />
-              Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)<br />
-              Datenübermittlung in Drittländer: Ja – USA, EU-U.S. Data Privacy Framework
-            </p>
-            
-            <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">2. ElevenLabs (Text-to-Speech-API)</h4>
-            <p>
-              Anbieter: ElevenLabs Inc., New York, NY, USA<br />
-              Zweck: Sprachausgabe von Texten<br />
-              Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)<br />
-              Datenübermittlung in Drittländer: Ja – USA, mit SCC
-            </p>
-            
-            <h4 className="text-base font-semibold text-[#1A371C] mt-4 mb-2">3. Amazon Web Services (AWS)</h4>
-            <p>
-              Anbieter: Amazon Web Services, Inc., Seattle, WA, USA<br />
-              Zweck: Hosting, Serverbetrieb<br />
-              Rechtsgrundlage: Vertragserfüllung, berechtigtes Interesse<br />
-              Datenübermittlung: EU/USA – DPF oder SCC
             </p>
           </div>
         </div>
