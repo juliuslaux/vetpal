@@ -1,0 +1,125 @@
+
+DATENSCHUTZERKLÄRUNG
+
+1. Datenschutz auf einen Blick
+
+Allgemeine Hinweise
+Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie der nachfolgenden Datenschutzerklärung.
+
+Datenerfassung auf dieser Website
+
+Wer ist verantwortlich für die Datenerfassung auf dieser Website?
+Die Datenverarbeitung auf dieser Website erfolgt durch die Betreiberin der Website:
+
+Vetpal UG (haftungsbeschränkt) i.G.
+Donaustraße 44
+12043 Berlin
+E-Mail: info@vetpal.de
+
+Wie erfassen wir Ihre Daten?
+Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen (z. B. durch ein Kontaktformular). Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst – z. B. technische Daten wie Browsertyp, Betriebssystem oder Uhrzeit des Seitenaufrufs.
+
+Wofür nutzen wir Ihre Daten?
+Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere können zur Analyse Ihres Nutzerverhaltens verwendet werden.
+
+Welche Rechte haben Sie bezüglich Ihrer Daten?
+Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten. Zudem können Sie die Berichtigung, Sperrung oder Löschung dieser Daten verlangen. Auch ein Widerruf Ihrer Einwilligung zur Datenverarbeitung ist jederzeit möglich. Darüber hinaus steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+
+2. Hosting
+
+Externes Hosting
+Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Dabei handelt es sich u. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen und Websitezugriffe.
+
+Das Hosting erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und effizienten Bereitstellung unserer Website). Wenn eine entsprechende Einwilligung vorliegt, erfolgt die Verarbeitung zusätzlich auf Basis von Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar.
+
+Eingesetzter Hoster:
+checkdomain GmbH
+a dogado group company
+Große Burgstraße 27/29
+23552 Lübeck
+
+Auftragsverarbeitung
+Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet.
+
+3. Allgemeine Hinweise und Pflichtinformationen
+
+Datenschutz
+Die Betreiberin dieser Website – die Vetpal UG (haftungsbeschränkt) i.G. – nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+
+Hinweis zur verantwortlichen Stelle
+Verantwortliche Stelle im Sinne der DSGVO ist:
+
+Vetpal UG (haftungsbeschränkt) i.G.
+Donaustraße 44
+12043 Berlin
+E-Mail: info@vetpal.de
+
+Speicherdauer
+Sofern innerhalb dieser Erklärung keine spezifischere Speicherdauer genannt wird, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt oder Sie Ihr Löschbegehren mitteilen. Gesetzliche Aufbewahrungsfristen bleiben unberührt.
+
+Rechtsgrundlagen der Datenverarbeitung
+Die Verarbeitung Ihrer Daten erfolgt je nach Kontext auf Grundlage folgender Rechtsgrundlagen:
+- Art. 6 Abs. 1 lit. a DSGVO – Einwilligung
+- Art. 6 Abs. 1 lit. b DSGVO – Vertragserfüllung
+- Art. 6 Abs. 1 lit. c DSGVO – Rechtspflicht
+- Art. 6 Abs. 1 lit. f DSGVO – Berechtigtes Interesse
+- § 25 Abs. 1 TDDDG – Einwilligung bei Endgerätezugriff
+
+Empfänger personenbezogener Daten
+Wir geben personenbezogene Daten nur weiter, wenn dies gesetzlich erlaubt ist oder zur Vertragserfüllung notwendig. Bei der Zusammenarbeit mit Auftragsverarbeitern schließen wir entsprechende Vereinbarungen ab.
+
+Ihre Rechte
+Sie haben unter anderem folgende Rechte:
+- Widerruf Ihrer Einwilligung
+- Widerspruch gegen Verarbeitung (Art. 21 DSGVO)
+- Beschwerderecht bei Aufsichtsbehörden
+- Auskunft, Berichtigung, Löschung
+- Einschränkung der Verarbeitung
+- Datenübertragbarkeit
+
+Widerspruch gegen Werbe-Mails
+Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur unverlangten Werbung wird widersprochen. Rechtliche Schritte im Falle von Spam bleiben vorbehalten.
+
+4. Datenerfassung auf dieser Website
+
+Cookies
+Unsere Website verwendet sogenannte Cookies. Diese dienen der Benutzerfreundlichkeit sowie Analysezwecken. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO bzw. – bei Einwilligung – Art. 6 Abs. 1 lit. a DSGVO i.V.m. § 25 Abs. 1 TDDDG.  
+Sie können Ihre Browser-Einstellungen so anpassen, dass Sie über Cookies informiert werden oder diese vollständig ablehnen. Die Funktionalität unserer Website kann dadurch eingeschränkt sein.
+
+5. Newsletter
+
+Wenn Sie unseren Newsletter abonnieren, benötigen wir Ihre E-Mail-Adresse und Ihre Einwilligung. Diese Einwilligung kann jederzeit widerrufen werden. Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO.  
+Bei Austragung aus dem Verteiler kann Ihre E-Mail-Adresse in eine Blacklist aufgenommen werden, um zukünftige Zusendungen zu verhindern.
+
+6. Plugins und Tools
+
+Google Fonts
+Zur einheitlichen Darstellung nutzt unsere Website Google Fonts. Beim Laden der Seite wird Ihre IP-Adresse an Google übermittelt. Die Nutzung basiert auf Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen:
+https://developers.google.com/fonts/faq
+https://policies.google.com/privacy?hl=de
+
+7. Drittanbieter-Dienste und Datenübermittlung in Drittländer
+
+Im Rahmen unserer Geschäftstätigkeit setzen wir verschiedene Softwaredienste externer Anbieter ein. Dabei kann es zur Übermittlung personenbezogener Daten an Drittstaaten außerhalb der Europäischen Union (insbesondere die USA) kommen. Die Verarbeitung erfolgt nur auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG) oder bei Vorliegen geeigneter Garantien im Sinne von Art. 44 ff. DSGVO.
+
+Wir haben mit allen Dienstleistern, soweit gesetzlich erforderlich, Auftragsverarbeitungsverträge (AVV) abgeschlossen.
+
+Eingesetzte Drittanbieterdienste im Überblick:
+
+1. OpenAI (ChatGPT, API-Nutzung)
+Anbieter: OpenAI, L.L.C., 3180 18th Street, San Francisco, CA 94110, USA
+Zweck: Verarbeitung natürlicher Sprache
+Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)
+Datenübermittlung in Drittländer: Ja – USA, EU-U.S. Data Privacy Framework
+
+2. ElevenLabs (Text-to-Speech-API)
+Anbieter: ElevenLabs Inc., New York, NY, USA
+Zweck: Sprachausgabe von Texten
+Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)
+Datenübermittlung in Drittländer: Ja – USA, mit SCC
+
+3. Amazon Web Services (AWS)
+Anbieter: Amazon Web Services, Inc., Seattle, WA, USA
+Zweck: Hosting, Serverbetrieb
+Rechtsgrundlage: Vertragserfüllung, berechtigtes Interesse
+Datenübermittlung: EU/USA – DPF oder SCC

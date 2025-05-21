@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { DM_Sans, Instrument_Sans } from 'next/font/google';
 import { Inter } from 'next/font/google'
+import CookieBanner from '@/components/CookieBanner'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,7 +65,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de" className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} ${instrumentSans.variable} ${inter.className} antialiased`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   );
 }
