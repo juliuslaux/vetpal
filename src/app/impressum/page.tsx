@@ -48,7 +48,7 @@ const BurgerButton = ({ isOpen, onClick }: { isOpen: boolean; onClick: () => voi
 
 export default function Impressum() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  
+
   return (
     <main>
       <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">

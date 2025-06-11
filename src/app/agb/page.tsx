@@ -249,19 +249,30 @@ export default function AGB() {
 
             <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 8 Haftung und Haftungsausschluss</h2>
             <p>
-              (1) Vetpal haftet ausschließlich für vorsätzliche oder grob fahrlässige Pflichtverletzungen.
+              (1) Vetpal haftet unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer vorsätzlichen oder fahrlässigen Pflichtverletzung von Vetpal, ihrer gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen.
             </p>
             <p>
-              (2) Für Schäden, die aus Fehlinterpretationen, Nicht-Weiterleitungen oder verspäteter Reaktion auf tierärztliche Notfälle resultieren, wird keine Haftung übernommen.
+              (2) Vetpal haftet für sonstige Schäden nur, wenn sie auf einer vorsätzlichen oder grob fahrlässigen Pflichtverletzung von Vetpal, ihrer gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen.
             </p>
             <p>
-              (3) Vetpal übernimmt keine Haftung für entgangene Behandlungen, Leid, Tierverlust oder Folgeschäden im Zusammenhang mit tierärztlichen Notfällen.
-            </p>
-            <p>
-              (4) Für systembedingte Unterbrechungen (z. B. Serverausfälle, Netzprobleme) wird die Haftung ebenfalls ausgeschlossen, es sei denn, Vetpal hat diese vorsätzlich oder grob fahrlässig verursacht.
+              (3) Die Haftung nach dem Produkthaftungsgesetz bleibt unberührt.
             </p>
 
-            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 9 Datenschutz und Vertraulichkeit</h2>
+            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 9 Referenzkunden und Marketing</h2>
+            <p>
+              (1) Der Kunde erklärt sich damit einverstanden, dass Vetpal den Namen und das Logo des Kunden auf der Vetpal-Website, in Marketingmaterialien und in sonstigen Veröffentlichungen als Referenzkunde verwenden darf.
+            </p>
+            <p>
+              (2) Die Verwendung erfolgt ausschließlich zu Marketing- und Referenzzwecken und dient der Darstellung der Kundenbasis von Vetpal.
+            </p>
+            <p>
+              (3) Der Kunde kann dieser Verwendung jederzeit schriftlich widersprechen. In diesem Fall wird Vetpal die Verwendung innerhalb von 30 Tagen nach Zugang des Widerspruchs einstellen.
+            </p>
+            <p>
+              (4) Der Kunde stellt sicher, dass er zur Erteilung dieser Einwilligung berechtigt ist und keine Rechte Dritter verletzt werden.
+            </p>
+
+            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 10 Datenschutz und Geheimhaltung</h2>
             <p>
               (1) Vetpal verarbeitet personenbezogene Daten ausschließlich im Rahmen der geltenden Datenschutzgesetze (insb. DSGVO) und gemäß der unterzeichneten Auftragsverarbeitungsvereinbarung (AVV).
             </p>
@@ -275,7 +286,7 @@ export default function AGB() {
               (4) Vetpal kann Telefonate automatisiert analysieren und speichern, sofern dies zur Verbesserung des Dienstes oder im Rahmen der vereinbarten Leistung erforderlich ist.
             </p>
 
-            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 10 Vertragslaufzeit und Kündigung</h2>
+            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 11 Vertragslaufzeit und Kündigung</h2>
             <p>
               (1) Die Vertragslaufzeit und Kündigungsfristen richten sich nach dem individuellen Angebot.
             </p>
@@ -286,7 +297,7 @@ export default function AGB() {
               (3) Nach Beendigung des Vertrages ist der Zugang zur Plattform deaktiviert, und sämtliche gespeicherten Inhalte werden datenschutzkonform gelöscht.
             </p>
 
-            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 11 Schlussbestimmungen</h2>
+            <h2 className="text-xl font-semibold text-[#1A371C] mt-8 mb-4">§ 12 Schlussbestimmungen</h2>
             <p>
               (1) Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts.
             </p>

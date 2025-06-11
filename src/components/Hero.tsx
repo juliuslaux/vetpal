@@ -108,7 +108,7 @@ export default function Example() {
 
   const toggleAudio = async () => {
     if (!audioRef.current) return;
-    
+
     try {
       const audio = audioRef.current;
 
@@ -125,7 +125,7 @@ export default function Example() {
         if (playPromise !== undefined) {
           playPromise
             .then(() => {
-              setIsPlaying(true);
+        setIsPlaying(true);
               setAudioError(null);
             })
             .catch(error => {
